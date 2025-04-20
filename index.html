@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="header">
+        <title>welcome</title>
+        <link rel="stylesheet"href="bootstrap.css">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        <style>
+          @media screen and(min-width:922px){
+          p{
+            font-size: xx-large;
+            font-weight: bolder;
+          }
+          button{
+            width: 500px;
+          margin-left: 50%;
+          }
+         }
+         body{
+          background-image: url(images-and-logo/8745f5bb611844328e81cdcea07162c9.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          background-color: rgba(0,0,0,0.5);
+          background-blend-mode:darken;
+         }
+         
+         .text-wrapper{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         }
+         .slide-in{
+          transform:translateX(-100%);
+          opacity: 0;
+          animation: slidein 0.7s ease-out forwards;
+         }
+         .slide-in:nth-child(1){
+          animation-delay: 1s;
+          transform: translateX(100%);
+         }
+         .slide-in:nth-child(2){
+          animation-delay: 2s;
+          transform: translateY(100%);
+         }
+          @keyframes slidein {
+            to{
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          .btn{
+            margin-top: 50px;
+            background-color: white;
+          }
+          .btn:active{
+            background-color: gold;
+            color: white;
+          }
+          .btn a{
+            color: gold;
+            font-weight: bold;
+            font-size: medium;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="text-wrapper">
+              <div class="slide-in">
+                <p style="margin-top: 200px; color: gold;font-size: larger;font-weight: bolder;">
+                  <em>Where imagination meets construction-crafting iconic spaces that leaves a lasting legacy,
+                 transforming ideas into landmarks with cutting-edge design and impeccable building.<span style="font-weight: bold;">Let's make your vision a reality.</span>
+                  </em></p>
+              </div>
+              <div class="slide-in"><button type="button" class="btn"><a href="home.html">EXPLORE &gt;</a></button></div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+</html>
